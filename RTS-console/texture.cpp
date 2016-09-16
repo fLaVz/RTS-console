@@ -19,3 +19,9 @@ texture::texture(std::string name, sf::Vector2f position) {
 	if(name != "background")
 		m_sprite.setScale(0.6, 0.6);
 }
+
+
+void texture::drawTexture(sf::RenderWindow &window) {
+
+	window.draw(m_sprite);
+}

@@ -13,5 +13,6 @@ class texture {
 public :
 
 	texture(std::string name, sf::Vector2f position);
+	void drawTexture(sf::RenderWindow &window);
 };
 #endif
