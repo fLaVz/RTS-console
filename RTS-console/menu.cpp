@@ -4,11 +4,15 @@ using namespace std;
 using namespace sf;
 
 menu::menu() {
-
+	this->menuState = "START";
 }
 
 
 vector<string> menu::configure() {
+
+
+	texture fond("background", Vector2f(0, 0));
+
 
 	//Creation du vector qui renvoie les paramètres du jeu
 	vector<string> state;
@@ -23,13 +27,16 @@ vector<string> menu::configure() {
 			if (event.type == Event::Closed) window.close();
 		}
 
-		if(getMenustate() == "MENU") {
+		window.clear();
+		fond.drawTexture(window);
 
+		if(getMenustate() == "START") {
+			fond.drawTexture(window);
 		}
 
 
 
-		window.clear();
+		
 		window.display();
 	}
 

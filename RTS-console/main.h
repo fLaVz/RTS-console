@@ -3,6 +3,7 @@
 #include <vector>
 
 #include "menu.h"
+#include "texture.h"
 
 using namespace std;
 using namespace sf;
