@@ -17,7 +17,7 @@ make mrproper -> clear all.
 If you can't run it just try to download to official release of sfml :
 	$ sudo apt-get install libsfml-dev
 
-If you can't compile it try to use an other version on c++ (1.19) :
+If you can't compile it try to use an other version on c++ compiler (1.19) :
 	$ sudo apt-get install g++-1.19 gcc-1.19
 
 
