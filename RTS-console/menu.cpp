@@ -11,7 +11,7 @@ menu::menu() {
 vector<string> menu::configure() {
 
 
-	texture fond("background", Vector2f(0, 0));
+	texture back("background", Vector2f(0, 0));
 
 
 	//Creation du vector qui renvoie les paramètres du jeu
@@ -28,10 +28,10 @@ vector<string> menu::configure() {
 		}
 
 		window.clear();
-		fond.drawTexture(window);
+		back.drawTexture(window);
 
 		if(getMenustate() == "START") {
-			fond.drawTexture(window);
+			
 		}
 
 
